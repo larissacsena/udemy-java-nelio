@@ -1,0 +1,18 @@
+package entities;
+
+public class Product {
+	// parametros publicos
+	public String name;
+	public double price;
+	public int quantity;
+
+	public double totalValueInStock() {
+		double total = price * quantity;
+		return total;
+	}
+
+	public void addProducts(int quantity) {
+		// referenciar atributo da classe usa this (observar cores)
+		this.quantity += quantity;
+	}
+}

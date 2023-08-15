@@ -1,0 +1,21 @@
+package entities;
+
+public class Rectangle {
+	public double height;
+	public double width;
+
+	public double area() {
+		double resultado = height * width;
+		return resultado;
+	}
+
+	public double perimetro() {
+		double resultado = 2 * (height + width);
+		return resultado;
+	}
+
+	public double diagonal() {
+		double x = (Math.pow(width, 2)) + (Math.pow(height, 2));
+		return 0;
+	}
+}

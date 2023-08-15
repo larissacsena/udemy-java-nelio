@@ -1,0 +1,12 @@
+package util;
+
+public class CurrencyConventer {
+
+	public static double paidInReais(double priceDolar, double totalDollars) {
+		double price = priceDolar * totalDollars;
+		double tax = price * 0.06;
+		double result = price + tax;
+		return result;
+	}
+
+}

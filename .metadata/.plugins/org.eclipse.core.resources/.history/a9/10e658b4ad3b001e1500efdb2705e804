@@ -1,0 +1,23 @@
+package entities;
+
+public class Bank {
+	// atributos privados por segurança
+	private String clientName;
+	private String accontNumber;
+	private double amountInTheAccount;
+
+	public Bank(String clientName, String accontNumber, double amountInTheAccount) {
+		super();
+		this.clientName = clientName;
+		this.accontNumber = accontNumber;
+		this.amountInTheAccount = amountInTheAccount;
+	}
+
+	public Bank(String clientName, String accontNumber) {
+		super();
+		this.clientName = clientName;
+		this.accontNumber = accontNumber;
+		this.amountInTheAccount = 0.00;
+	}
+
+}

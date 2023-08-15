@@ -1,0 +1,23 @@
+package entities;
+
+public class Product {
+	//parametros publicos
+	public String name;
+	public double price;
+	public int quantity;
+
+	public double totalValueInStock() {
+		double total = price * quantity;
+		return total;
+	}
+
+	public void addProduct(int quantia) {
+		quantity += quantia;
+		total = price * quantity;
+	}
+
+	public void removeProduct(int quantia) {
+		quantity -= quantia;
+		total = price * quantity;
+	}
+}

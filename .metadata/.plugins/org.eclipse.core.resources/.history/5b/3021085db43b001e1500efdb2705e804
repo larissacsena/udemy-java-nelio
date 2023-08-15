@@ -1,0 +1,53 @@
+package entities;
+
+public class Bank {
+	// atributos privados por segurança
+	private String clientName;
+	private String accontNumber;
+	private double amountInTheAccount;
+
+	// duas formas de abrir uma conta (instanciar) CONSTRUTORES
+
+	public Bank(String clientName, String accontNumber) {
+		super();
+		this.clientName = clientName;
+		this.accontNumber = accontNumber;
+		this.amountInTheAccount = 0.00;
+	}
+
+	// ENCAPSULAMENTO
+
+	public String getClientName() {
+		return clientName;
+	}
+
+	public void setClientName(String clientName) {
+		this.clientName = clientName;
+	}
+
+	public String getAccontNumber() {
+		return accontNumber;
+	}
+
+	public double getAmountInTheAccount() {
+		return amountInTheAccount;
+	}
+
+	// METODOS DA MINHA CLASSE DO BANCO
+
+	public void deposit(double value) {
+		this.amountInTheAccount += + value;
+	}
+	
+
+	public void withdraw(double value) {
+		this.amountInTheAccount -= - value - 5.0;
+
+	}
+	
+
+	public String toString() {
+
+		return "Account " + accontNumber + ", Holder:  " + clientName + ", Balance: $ " +  String.format("%.2f", amountInTheAccount);
+	}
+}
